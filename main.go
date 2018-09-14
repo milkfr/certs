@@ -105,7 +105,7 @@ func signHost(ca tls.Certificate, hosts []string) (err error) {
 	keyBuffer := bytes.Buffer{}
 	pem.Encode(&keyBuffer, &pem.Block{Type: "RSA PRIVATE KEY", Bytes: x509.MarshalPKCS1PrivateKey(certpriv)})
 
-	err = ioutil.WriteFile("ca.cer", certBuffer.Bytes(), 0644)
+	err = ioutil.WriteFile("ca.crt", certBuffer.Bytes(), 0644)
 	if err != nil {
 		return
 	}

@@ -28,7 +28,7 @@ localityName_default		= hangzhou
 #1.organizationName_default	= World Wide Web Pty Ltd
 
 organizationalUnitName		= Organizational Unit Name (eg, section)
-organizationalUnitName_default	= scythe
+organizationalUnitName_default	= milkfr
 
 commonName			= Common Name (e.g. server FQDN or YOUR name)
 commonName_default		= milkfr.github.io
